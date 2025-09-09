@@ -16,11 +16,10 @@ int main() {
 		if (arr[j] > maxVal) {
 			maxVal = arr[j];
 		}
-		else if (arr[j] < minVal) {
+		if (arr[j] < minVal) {
 			minVal = arr[j];
 		}
 	}
 	std::cout << minVal << " " << maxVal;
-	
 	
 }
