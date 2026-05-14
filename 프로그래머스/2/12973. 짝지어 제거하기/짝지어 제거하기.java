@@ -1,18 +1,22 @@
 import java.util.Stack;
 
-class Solution {
+class Solution
+{
     public int solution(String s) {
         Stack<Character> st = new Stack<>();
-        for (int i = 0; i < s.length(); i++) {
+        for(int i = 0; i < s.length(); i++){
             char ch = s.charAt(i);
-
-            if (!st.isEmpty() && st.peek() == ch) {
+            if(!st.isEmpty() && st.peek() == ch){
                 st.pop();
-            } else {
+            }
+            else{
                 st.push(ch);
             }
-          
         }
-        return st.isEmpty() ? 1 : 0;
+
+        int answer;
+
+
+        return answer = st.isEmpty() ? 1:0;
     }
 }
